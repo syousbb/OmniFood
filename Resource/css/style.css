@@ -10,6 +10,7 @@ Section Steps Gray: #ebebeb
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -139,6 +140,7 @@ h2:after {
     text-decoration: none;
     font-weight: 300;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -176,6 +178,7 @@ a:link, a:visited {
     border-bottom: 1px solid #e67e22;
     margin-bottom: 1px;
     text-decoration: none;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -199,6 +202,7 @@ a:hover, a:active{
 /*____________________________________*/
 
 header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -237,6 +241,7 @@ header{
     text-transform: uppercase;
     color: #fff;
     font-size: 90%;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
     padding: 8px 0px;
 }
@@ -277,12 +282,17 @@ header{
     width: 100%;
     height: auto;
     opacity: 0.7;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 ._mealPhoto img:hover{
     opacity: 1;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
 
@@ -367,6 +377,7 @@ header{
 /*____________________________________*/
 
 ._sectionTestimonials{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-attachment: fixed;
     Color: white;
@@ -416,6 +427,7 @@ cite img{
     background-color: #fff;
     width:90%;
     margin-left:5%;
+    -webkit-box-shadow: 0 0 5px #c7c7c7;
     box-shadow: 0 0 5px #c7c7c7;
 }
 
@@ -523,6 +535,7 @@ footer li:last-child{
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
